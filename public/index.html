@@ -1,0 +1,395 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <title>JumiWeb</title>
+    </head>
+
+    <body class="">
+        <!--Desktop menu-->
+        <nav class="hidden lg:flex items-center h-25 pl-30 pr-30 justify-between navy text-white font-poppins uppercase sticky top-0 z-50">
+            
+            <div class="w-[20%]">
+                <ul class="menu">
+                    <li class="hoveredMenu mr-[30px]"><a href="index.html" class="">Home</a></li>
+                    <li class="hoveredMenu ml-[30px]"><a href="about.html">About</a></li>
+                    <!--<li class="hoveredMenu mr-[30px]"><a href="#" class="">Blog</a></li>
+                    <li class="hoveredMenu "><a href="#">Services</a></li>-->
+                </ul>
+            </div>
+
+            <div class="">
+                <ul class="">
+                    <li><a href="index.html" class="font-logo text-2xl md:text-4xl">Jumi Web</a></li>
+                </ul>
+            </div>
+            
+            <div class="w-[20%]">
+                <ul class="menu">
+                    <li class="hoveredMenu"><a href="portfolio.html">Portfolio</a></li>
+                    <!--<li class="hoveredMenu ml-[30px]"><a href="about.html">About</a></li>-->
+                    <li class="hoveredMenu ml-[30px] "><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+        </nav>
+        
+        <!--Mobile menu-->
+        <nav class="lg:hidden flex navy text-white justify-between h-15 items-center uppercase pl-10 pr-10">
+            <div class="">
+                <ul class="">
+                    <li><a href="#" class="font-logo text-3xl md:text-4xl">Jumi Web</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <button id="open-menu" class="transition-all duration-1000 opacity-100 cursor-pointer">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <button id="close-menu" class="transition-all duration-1000 opacity-0 cursor-pointer">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            
+
+        </nav>
+
+        <div id="mobile-menu" class="uppercase max-h-0 overflow-hidden transition-all duration-500">
+            <ul class="block bg-[rgb(32,33,36)] text-white pl-12">
+                <li class="mobileMenu "><a href="#" class="">Home</a></li>
+                <!--<li class="mobileMenu"><a href="#" class="">Blog</a></li>
+                <li class="mobileMenu"><a href="#">Services</a></li>-->
+                <li class="mobileMenu"><a href="about.html">About</a></li>
+                <li class="mobileMenu"><a href="portfolio.html">Portfolio</a></li>
+                <li class="mobileMenu pb-2"><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        
+
+        <main class="w-[100%]">
+            <section class=" navy  h-125 flex justify-center items-center text-white">
+                <div class="">
+                    <div class=" text-center w-[100%]">
+                        <h1 class="text-[7rem] md:text-[11rem] transform scale-y-105 uppercase font-bold ">Hello</h1>
+                        <h2 class="text-4xl md:text-5xl uppercase font-semibold">I am a Frontend developer</h2>
+                    </div>
+
+                    <div class="mt-10">
+                        <form id="getResumeForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="block md:flex justify-between px-5 md:px-0">
+                            <input id="emailField" type="email" name="email" placeholder="Email" required class="bg-[#202131] h-13 px-4 text-lg outline-0 focus:bg-[#4f5171] w-[100%] md:w-[45%]"/>
+                            <input id="getResumeBtn" type="submit" value="GET MY RESUME" class="bg-[#f4b942] h-13 text-[#202131] text-lg font-semibold rounded-[2px] hover:bg-white transition-all duration-300 w-[100%] md:w-[45%] mt-5 md:mt-0"/>
+                            <div id="success-msg" class="flex items-center hidden">
+                                <h2 class="uppercase font-roboto text-[18px] pl- text-green-300">Submitted !</h2>
+                            </div>
+                            
+                        </form>
+
+                    </div>
+
+                    <div class="px-5 md:px-0">
+                        <h6 class="text-lg text-[#dbd1d1] mt-5">* Get my resume directly in your mailbox</h6>
+                    </div>
+                    
+                </div>
+                
+            </section>
+
+            <!--About Section-->
+            <section class="section pt-20 ">
+                <div class="px-[clamp(20px, calc(10.4167vw - 13.3333px), 120px)] md:flex">
+                    <div class=" text-center md:w-[50%] md:text-left">
+                        <div class="mt-5">
+                            <h4>ABOUT ME</h4>
+                        </div>
+
+                        <div class="mt-5">
+                            <h3 class="uppercase text-[1.7rem] ">I'm a passionate <br/> Frontend developer</h3>
+                            
+                        </div>
+
+                        <div class="flex justify-center md:block">
+                            <div class="border-b-2 border-[#F5B63A] mt-5 w-10"></div>
+                        </div>
+                    </div>
+
+                    <div class=" text-center md:w-[50%] md:text-left">
+                        <div class="leading-[1.6em] text-[18px] font-roboto mt-5">
+                            <h5 class="font-light">I am a frontend developer passionate about creating modern, responsive, and user-focused websites. Skilled in HTML, CSS, JavaScript, React, and Tailwind, I build clean and functional interfaces with strong attention to detail and usability. I work with component-based development, reusable UI patterns, and efficient workflows using tools like Git, VS Code, npm, and Vite, ensuring smooth performance and scalable code.
+                                <br><br>I enjoy learning new technologies and continuously improving my craft, from API integration to routing, form validation, and UI optimization. Whether working independently or collaborating in a team, I aim to deliver visually appealing, accessible, and professional digital experiences with a strong focus on user experience, reliability, and real-world value.</h5>
+                        </div>
+
+                        <div class="mt-10 font-semibold text-[16px] tracking-[1px]">
+                            <h4 class="uppercase">check ME on</h4>
+                        </div>
+
+                        <div class="flex justify-center md:block">
+                            <div class="flex justify-between text-[#12122a] w-[50%] mt-5">
+                                <div class="socialIcons cursor-pointer"><a><i class="fab fa-instagram"></i></a></div>
+                                <div class="socialIcons cursor-pointer"><a><i class="fab fa-linkedin"></i></a></div>
+                                <div class="socialIcons cursor-pointer"><a><i class="fab fa-github"></i></a></div>
+                                <div class="socialIcons cursor-pointer"><a><i class="fab fa-x-twitter"></i></a></div>
+                                <!--<div class="logo"><a><i class="fab fa-facebook"></i></a></div>-->
+                                
+
+                            </div>
+                        </div>
+
+                    
+                    </div>
+                </div>
+                
+            </section>  
+
+            <!--Grid portfolio-->
+            <section class="section">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+                    <div class="card">
+                        <img src="/public/media/graphic-design.png" class="w-auto h-auto mx-auto">
+                        <h3 class="cardTitle">HTML, CSS & Responsive Design</h3>
+                        <h4 class="cardContent">I specialize in building websites that look great on any device. By combining semantic HTML with flexible CSS and modern layout techniques.</h4>
+                        <div class="cardBtn"><li class="fa-solid fa-arrow-right"></li></div>
+                    </div>
+
+                    <div class="card bg-[#F5B63A] text-black">
+                        <img src="/public/media/web-design.png" class="w-auto h-auto mx-auto">
+                        <h3 class="cardTitle">JavaScript & React</h3>
+                        <h4 class="cardContent">With a strong command of JavaScript and frameworks like React, I bring web applications to life. From interactive forms to real-time data updates.</h4>
+                        <div class="cardBtn bg-[#0B0C24] text-white"><li class="fa-solid fa-arrow-right"></li></div>
+                    </div>
+
+                    <div class="card">
+                        <img src="/public/media/product-design.png" class="w-auto h-auto mx-auto">
+                        <h3 class="cardTitle">UI/UX & Performance Optimization</h3>
+                        <h4 class="cardContent">Great design isn’t just about looks—it’s about how it feels and performs. I prioritize user experience, accessibility, and fast-loading pages.</h4>
+                        <div class="cardBtn"><li class="fa-solid fa-arrow-right"></li></div>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section class="section">
+                <div class="w-[80%] mx-auto">
+                    <div class="font-josefin text-center font-semibold uppercase tracking-[1px] text-[32px]">
+                        <h1>My resume</h1>
+                    </div>
+
+                    <div class="resumeBlock">
+                        <div class="md:w-[50%] text-center md:text-left">
+                            <h2 class="text-[16px] font-josefin font-semibold tracking-[2px] uppercase">Web Designer - AGHI NIGERIA</h2>
+                            <p class="font-light text-[16px] font-roboto pt-3">CONTRACT (July 2023 - Nov 2023)</p>
+                        </div>
+
+                        <div class="md:w-[50%] text-center md:text-left mt-5 md:mt-0">
+                            <p class="text-[18px] font-roboto font-extralight">Collaborated with the AGHI's team to redesign their corporate website. Focused on creating a modern, responsive layout, improving site navigation, and optimizing load performance. The redesign enhanced user engagement and provided a more polished, professional online presence for the company.</p>
+                        </div>
+                    </div>
+
+                    <div class="resumeBlock">
+                        <div class="md:w-[50%] text-center md:text-left">
+                            <h2 class="text-[16px] font-josefin font-semibold tracking-[2px] uppercase">Web Designer - AGHI NIGERIA</h2>
+                            <p class="font-light text-[16px] font-roboto pt-3">CONTRACT (July 2023 - Nov 2023)</p>
+                        </div>
+
+                        <div class="md:w-[50%] text-center md:text-left mt-5 md:mt-0">
+                            <p class="text-[18px] font-roboto font-extralight">Collaborated with the AGHI's team to redesign their corporate website. Focused on creating a modern, responsive layout, improving site navigation, and optimizing load performance. The redesign enhanced user engagement and provided a more polished, professional online presence for the company.</p>
+                        </div>
+                    </div>
+
+                    <div class="resumeBlock border-b-0">
+                        <div class="md:w-[50%] text-center md:text-left">
+                            <h2 class="text-[16px] font-josefin font-semibold tracking-[2px] uppercase">Web Designer - AGHI NIGERIA</h2>
+                            <p class="font-light text-[16px] font-roboto pt-3">CONTRACT (July 2023 - Nov 2023)</p>
+                        </div>
+
+                        <div class="md:w-[50%] text-center md:text-left mt-5 md:mt-0">
+                            <p class="text-[18px] font-roboto font-extralight">Collaborated with the AGHI's team to redesign their corporate website. Focused on creating a modern, responsive layout, improving site navigation, and optimizing load performance. The redesign enhanced user engagement and provided a more polished, professional online presence for the company.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-center">
+                        <button class="bg-[#f4b942] h-13 w-[100%] md:w-[35%] cursor-pointer text-[#202131] text-lg font-semibold rounded-[2px] hover:bg-white transition-all duration-300 mt-15">Lets Work together</button> 
+                    </div>
+                      
+                    
+                </div>
+            </section>
+
+            <section class="grid section grid-cols-1 md:grid-cols-3 gap-10">
+
+                <div class="text-center md:text-left">
+                    <img src="/public/media/Portfolio-01-768x512.jpg" class="transition-transform duration-300 hover:-translate-y-2 cursor-pointer"/>
+                    <h1 class="cardTitle mt-5">AGHI nigeria</h1>
+                    <p class="cardContent mt-1">Brand Identity / Web Design</p>
+                </div>
+
+                <div class="text-center md:text-left">
+                    <img src="/public/media/Portfolio-06-768x512.jpg" class="transition-transform duration-300 hover:-translate-y-2 cursor-pointer"/>
+                    <h1 class="cardTitle mt-5">AGHI nigeria</h1>
+                    <p class="cardContent mt-1">Brand Identity / Web Design</p>
+                </div>
+
+                <div class="text-center md:text-left">
+                    <img src="/public/media/Portfolio-04-768x512.jpg" class="transition-transform duration-300 hover:-translate-y-2 cursor-pointer"/>
+                    <h1 class="cardTitle mt-5">aghi nigeria</h1>
+                    <p class="cardContent mt-1">Brand Identity / Web Design</p>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="font-josefin text-center font-semibold uppercase tracking-[1px] text-[32px] mb-15">
+                    <h1>My skills</h1>
+                </div>
+
+                <div class="block md:flex">
+
+                    <div class="md:w-[50%] p-10 hover:bg-[#202131] hover:shadow-md text-center md:text-left">
+                        <div class="rt">
+                            <div class="md:flex">
+                                <div class="flex justify-center mb-7 md:mb-0">
+                                    <div class="w-9 h-9 flex items-center justify-center bg-transparent border-3 font-bold rounded-full"><li class="fa-solid fa-check"></li></div>
+                                </div>
+                                
+                                <div class="md:ml-5">
+                                    <h2 class="font-semibold uppercase font-josefin">HTML & Semantic Markup</h2>
+                                    <p class="p1">I create clean, semantic HTML structures that form the backbone of every website, ensuring accessibility, SEO friendliness, and maintainable code.</p>
+                                </div>
+                                
+                            </div>
+                                
+                        </div>
+
+                    </div>
+
+                    <div class="md:w-[50%] p-10 hover:bg-[#202131] hover:shadow-md text-center md:text-left">
+                        <div class="rt">
+                            <div class="md:flex">
+                                <div class="flex justify-center mb-7 md:mb-0">
+                                    <div class="w-9 h-9 flex items-center justify-center bg-transparent border-3 font-bold rounded-full"><li class="fa-solid fa-check"></li></div>
+                                </div>
+                                
+                                <div class="md:ml-5">
+                                    <h2 class="font-semibold uppercase font-josefin">CSS & Tailwind CSS</h2>
+                                    <p class="p1">I use CSS and Tailwind to craft visually appealing, responsive designs quickly and efficiently, combining utility-first styling with modern design principles.</p>
+                                </div>
+                                
+                            </div>
+                                
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--continue-->
+
+                <div class="block md:flex">
+
+                    <div class="md:w-[50%] p-10 hover:bg-[#202131] hover:shadow-md text-center md:text-left">
+                        <div class="rt">
+                            <div class="md:flex">
+                                <div class="flex justify-center mb-7 md:mb-0">
+                                    <div class="w-9 h-9 flex items-center justify-center bg-transparent border-3 font-bold rounded-full"><li class="fa-solid fa-check"></li></div>
+                                </div>
+                                
+                                <div class="md:ml-5">
+                                    <h2 class="font-semibold uppercase font-josefin">JavaScript & React</h2>
+                                    <p class="p1">I build dynamic, interactive web applications with JavaScript and React, creating engaging interfaces that respond in real time to user actions.</p>
+                                </div>
+                                
+                            </div>
+                                
+                        </div>
+
+                    </div>
+
+                    <div class="md:w-[50%] p-10 hover:bg-[#202131] hover:shadow-md text-center md:text-left">
+                        <div class="rt">
+                            <div class="md:flex">
+                                <div class="flex justify-center mb-7 md:mb-0">
+                                    <div class="w-9 h-9 flex items-center justify-center bg-transparent border-3 font-bold rounded-full"><li class="fa-solid fa-check"></li></div>
+                                </div>
+                                
+                                <div class="md:ml-5">
+                                    <h2 class="font-semibold uppercase font-josefin">WordPress Development</h2>
+                                    <p class="p1">I develop and customize WordPress websites, from building themes and integrating plugins to ensuring responsive, SEO-friendly, and user-centric designs.</p>
+                                </div>
+                                
+                            </div>
+                                
+                        </div>
+
+                    </div>
+
+                </div>
+
+                
+
+            </section>
+
+            <section class="section">
+                <div class=" bg-[#F5B63A] h-100 text-center">
+
+                        <div class="flex justify-center pt-10 pb-7">
+                            <img src="/public/media/ed-pic.png" class="w-[120px] h-[120px] rounded-full"/>
+                        </div>  
+
+                        <p class="text-[16px] font-roboto text-black">In ornare quam viverra orci sagittis eu volutpat. Ultricies tristique nulla aliquet enim tortor at auctor.</p>
+
+                        <h1 class="uppercase font-josefin mt-5 text-black font-bold italic">Amalumilo Michael</h1>
+                        
+                        <div class="flex justify-center">
+                            <div class="text-[#0B0C24] mt-5"><li class="fa-solid fa-circle"></li></div>
+                            <div class="text-[#0b0c2473] mt-5 ml-2"><li class="fa-solid fa-circle"></li></div>
+                        </div>
+                </div>
+                
+            </section>
+
+            <footer class="section text-center bg-[#12122a] pb-5">
+                <div><a href="#" class="font-logo text-3xl md:text-4xl uppercase">Jumi Web</a></div>
+                
+                <div class="py-10 font-roboto text-[20px] md:text-[26px] font-bold">
+                    <h1>Are You Ready to Work with Me?<br> I'm Ready Too, Say Hello!</h1>
+                </div>
+
+                <div class="md:flex justify-center items-center text-center">
+                    <p class="font-roboto text-[18px] md:pr-7"><a href="mailto:jumiweb@gmail.com">jumiweb@gmail.com</a></p>
+                    <p class="font-roboto text-[18px] mt-3 md:mt-0">+2349159538483</p>
+                </div>
+
+                <div class="border-t-1 border-gray-500 mt-15 pt-7 md:flex">
+
+                    <div class="md:w-[50%] flex items-center justify-center md:justify-start">
+                        <ul class="flex items-center justify-center md:justify-start text-white font-poppins uppercase menu">
+                        
+                            <li class="hoveredMenu mr-[30px]"><a href="index.html" class="">Home</a></li>
+                            <li class="hoveredMenu mr-[30px]"><a href="about.html" class="">About</a></li>
+                            <li class="hoveredMenu mr-[30px]"><a href="portfolio.html" class="">Portfolio</a></li>
+                            <li class="hoveredMenu "><a href="contact.html">Contacts</a></li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="md:w-[50%]">
+                        <div class="flex text-[#202131] justify-center md:justify-end mt-5 md:mt-0">
+                            <div class="socialIcons cursor-pointer"><a><i class="fab fa-instagram"></i></a></div>
+                            <div class="socialIcons cursor-pointer"><a><i class="fab fa-linkedin"></i></a></div>
+                            <div class="socialIcons cursor-pointer"><a><i class="fab fa-github"></i></a></div>
+                            <div class="socialIcons cursor-pointer"><a><i class="fab fa-x-twitter"></i></a></div>
+                            <!--<div class="logo"><a><i class="fab fa-facebook"></i></a></div>-->
+                        </div>
+                    </div>
+
+                </div>
+            </footer>
+        </main>
+
+        <script src="index.js"></script>
+    </body>
+
+    
+</html>

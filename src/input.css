@@ -1,0 +1,72 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+  --font-logo: 'Great Vibes', serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-josefin: "Josefin Sans", sans-serif;
+}
+
+
+@layer components {
+  .navy {
+    @apply bg-[#0B0C24]
+  }
+
+  .menu {
+    @apply flex items-center text-sm;
+  }
+
+  .mobileMenu {
+    @apply text-left hover:text-[#F5B63A] transition-colors duration-300 pt-1;
+  }
+
+  .section {
+    @apply bg-[#0B0C24] text-white  py-20 w-[100%]  px-5 xl:px-30;
+  }
+
+  .hoveredMenu {
+    @apply relative pb-1 border-b-2 border-transparent hover:border-[#F5B63A]  text-center transition-all duration-300;
+  }
+
+  .socialIcons {
+    @apply bg-white w-9 h-9 flex items-center justify-center rounded-full hover:bg-[#F5B63A] hover:text-white hover:w-11 hover:h-11 transition-all duration-300;
+  }
+
+  .card {
+    @apply p-10 bg-[#1e1f36] shadow-xl;
+  }
+
+  .cardTitle {
+    @apply uppercase font-josefin mt-20 text-[16px];
+  }
+
+  .cardContent {
+    @apply font-roboto mt-5 text-[18px];
+  }
+
+  .cardBtn {
+    @apply bg-[#F5B63A] mx-auto w-15 h-15 rounded-full flex items-center justify-center mt-5 hover:bg-[#0B0C24] transition-transform duration-300 hover:scale-110 cursor-pointer;
+  }
+
+  /* My Resume styling*/
+  .resumeBlock {
+    @apply md:flex justify-between border-b-1 border-b-gray-500 py-10;
+  }
+
+  .heading {
+    @apply text-[16px] font-josefin font-semibold tracking-[2px] uppercase;
+  }
+
+  .p1 {
+    @apply font-light text-[16px] font-roboto pt-3;
+  }
+
+  /*aout achievements*/
+  .acheiveCards{
+    @apply bg-[#1e1f36] lg:w-[90%] lg:h-[20rem] h-[30rem] flex items-center justify-center mt-10;
+  }
+
+
+}

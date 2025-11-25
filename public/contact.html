@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <title>JumiWeb</title>
+    </head>
+
+    <body>
+        <!--Desktop menu-->
+        <nav class="hidden lg:flex items-center h-25 pl-30 pr-30 justify-between navy text-white font-poppins uppercase sticky top-0 z-50">
+            
+            <div class="w-[20%]">
+                <ul class="menu">
+                    <li class="hoveredMenu mr-[30px]"><a href="index.html" class="">Home</a></li>
+                    <li class="hoveredMenu ml-[30px]"><a href="about.html">About</a></li>
+                    <!--<li class="hoveredMenu mr-[30px]"><a href="#" class="">Blog</a></li>
+                    <li class="hoveredMenu "><a href="#">Services</a></li>-->
+                </ul>
+            </div>
+
+            <div class="">
+                <ul class="">
+                    <li><a href="index.html" class="font-logo text-2xl md:text-4xl">Jumi Web</a></li>
+                </ul>
+            </div>
+            
+            <div class="w-[20%]">
+                <ul class="menu">
+                    <li class="hoveredMenu"><a href="portfolio.html">Portfolio</a></li>
+                    <!--<li class="hoveredMenu ml-[30px]"><a href="about.html">About</a></li>-->
+                    <li class="hoveredMenu ml-[30px] "><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+        </nav>
+        
+        <!--Mobile menu-->
+        <nav class="lg:hidden flex navy text-white justify-between h-15 items-center uppercase pl-10 pr-10">
+            <div class="">
+                <ul class="">
+                    <li><a href="#" class="font-logo text-3xl md:text-4xl">Jumi Web</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <button id="open-menu" class="transition-all duration-1000 opacity-100 cursor-pointer">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <button id="close-menu" class="transition-all duration-1000 opacity-0 cursor-pointer">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            
+
+        </nav>
+
+        <div id="mobile-menu" class="uppercase max-h-0 overflow-hidden transition-all duration-500">
+            <ul class="block bg-[rgb(32,33,36)] text-white pl-12">
+                <li class="mobileMenu "><a href="#" class="">Home</a></li>
+                <!--<li class="mobileMenu"><a href="#" class="">Blog</a></li>
+                <li class="mobileMenu"><a href="#">Services</a></li>-->
+                <li class="mobileMenu"><a href="about.html">About</a></li>
+                <li class="mobileMenu"><a href="portfolio.html">Portfolio</a></li>
+                <li class="mobileMenu pb-2"><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <section class="section pt-20 ">
+            
+            <div class="px-[clamp(20px, calc(10.4167vw - 13.3333px), 120px)] md:flex">
+                <div class=" text-center md:w-[50%] md:text-left">
+                    <div class="mt-5 uppercase font-josefin">
+                        <h4>My location</h4>
+                    </div>
+
+                    <div class="mt-5 font-roboto">
+                        <h3 class="uppercase text-[1.7rem] ">Where am i? <br/>Let's Find Out!</h3>
+                        
+                    </div>
+
+                    <div class="flex justify-center md:block">
+                        <div class="border-b-2 border-[#F5B63A] mt-5 w-10"></div>
+                    </div>
+
+                    <div class="mt-10 md:mt-5">
+                        <div class="flex items-center justify-center md:justify-start font-roboto text-[16px]">
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            <p class="ml-3">No. 19 Udorji Street New Layout Enugu Nigeria</p>
+                        </div>
+
+                        <div class="flex items-center justify-center md:justify-start font-roboto text-[16px] mt-3">
+                            <i class="fa-solid fa-phone"></i>
+
+                            <p class="ml-3">+2349159538483</p>
+                        </div>
+
+                        <div class="flex items-center justify-center md:justify-start font-roboto text-[16px] mt-3">
+                            <i class="fa-solid fa-envelope"></i>
+
+                            <p class="ml-3">jumiweb@gmail.com</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class=" md:w-[50%] md:text-left">
+                    <div class="leading-[1.6em] text-[18px] font-roboto mt-5">
+                        <div class="font-josefin uppercase flex justify-center md:justify-start mt-20 md:mt-0">
+                            <h1>Drop me a Message</h1>
+                        </div>
+                        <form id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" >
+                            <input type="text" name="name" placeholder="Name" autocomplete="on" required class="mt-5 bg-[#202131] px-4 h-12 w-[100%] outline-0"/>
+                            <input type="email" name="email" placeholder="Enter your email" autocomplete="on" required class="mt-5 bg-[#202131] px-4 h-12 w-[100%] outline-0"/>
+                            <textarea name="message" placeholder="Message" required class="mt-5 bg-[#202131] px-4 py-5 h-30 w-[100%] outline-0"></textarea>
+                            <div class="flex justify-end items-end">
+                                
+                                <input type="submit" value="Submit" class="mt-5 bg-[#202131] w-[150px] h-12 ml-auto hover:bg-[#F5B63A] rounded-[2px] cursor-pointer transition-all duration-300 shadow-lg shadow-white"/>
+                            
+                                <div id="msg" class="pl-3 hidden">
+                                    <h2 class="uppercase font-roboto text-[18px] pl- text-green-300">Submitted !</h2>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="mt-25 md:mt-10 font-semibold text-[16px] tracking-[1px] flex justify-center md:justify-start">
+                        <h4 class="uppercase">check ME on</h4>
+                    </div>
+
+                    <div class="flex justify-center md:block">
+                        <div class="flex justify-between text-[#12122a] w-[50%] mt-5">
+                            <div class="socialIcons cursor-pointer"><a><i class="fab fa-instagram"></i></a></div>
+                            <div class="socialIcons cursor-pointer"><a><i class="fab fa-linkedin"></i></a></div>
+                            <div class="socialIcons cursor-pointer"><a><i class="fab fa-github"></i></a></div>
+                            <div class="socialIcons cursor-pointer"><a><i class="fab fa-x-twitter"></i></a></div>
+                            <!--<div class="logo"><a><i class="fab fa-facebook"></i></a></div>-->
+
+                        </div>
+                    </div>
+
+                
+                </div>
+            </div>
+            
+        </section>
+
+        <footer class="section text-center bg-[#12122a] pb-5">
+            <div><a href="#" class="font-logo text-3xl md:text-4xl uppercase">Jumi Web</a></div>
+            
+            <div class="py-10 font-roboto text-[20px] md:text-[26px] font-bold">
+                <h1>Are You Ready to Work with Me?<br> I'm Ready Too, Say Hello!</h1>
+            </div>
+
+            <div class="md:flex justify-center items-center text-center">
+                <p class="font-roboto text-[18px] md:pr-7"><a href="mailto:jumiweb@gmail.com">jumiweb@gmail.com</a></p>
+                <p class="font-roboto text-[18px] mt-3 md:mt-0">+2349159538483</p>
+            </div>
+
+            <div class="border-t-1 border-gray-500 mt-15 pt-7 md:flex">
+
+                <div class="md:w-[50%] flex items-center justify-center md:justify-start">
+                    <ul class="flex items-center justify-center md:justify-start text-white font-poppins uppercase menu">
+                    
+                        <li class="hoveredMenu mr-[30px]"><a href="#" class="">Home</a></li>
+                        <li class="hoveredMenu mr-[30px]"><a href="#" class="">Services</a></li>
+                        <li class="hoveredMenu mr-[30px]"><a href="#" class="">Portfolio</a></li>
+                        <li class="hoveredMenu "><a href="#">Contacts</a></li>
+                        
+                    </ul>
+                </div>
+
+                <div class="md:w-[50%]">
+                    <div class="flex text-[#202131] justify-center md:justify-end mt-5 md:mt-0">
+                        <div class="socialIcons cursor-pointer"><a><i class="fab fa-instagram"></i></a></div>
+                        <div class="socialIcons cursor-pointer"><a><i class="fab fa-linkedin"></i></a></div>
+                        <div class="socialIcons cursor-pointer"><a><i class="fab fa-github"></i></a></div>
+                        <div class="socialIcons cursor-pointer"><a><i class="fab fa-x-twitter"></i></a></div>
+                        <!--<div class="logo"><a><i class="fab fa-facebook"></i></a></div>-->
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+        <script src="index.js"></script>
+    </body>
+</html>
