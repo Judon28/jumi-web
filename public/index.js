@@ -73,7 +73,7 @@ getResumeForm.addEventListener("submit", async (e) => {
   // Submit to Netlify
   await fetch("/", {
     method: "POST",
-    body: new FormData(form),
+    body: new FormData(getResumeForm),
   });
 
   // Show the success message
